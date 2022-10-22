@@ -1,0 +1,9 @@
+# How are we going to start out with programming this thing?
+
+Ideas for what language to use. 
+1. Use Python. Either have constant real time audio processing
+ - Use Python. Every few seconds, record a file for audio. Analyze that file to see if it has some loud noise. Return with notification
+2. Use Java. Do the whole thing in java and the run on an app
+
+First Implementation
+- using speech recognition api on with python for real time signal processing. It listens for speech, and the returns a message. Should be as easy as voice threshold. 
