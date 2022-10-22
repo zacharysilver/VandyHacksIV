@@ -13,3 +13,9 @@ Python with Apps
 Javascript runs on the client. I assume the python runs on the server. You could send an ajax request to the server. It won't be fast.
 Using ajax, send text to a python script on your server. 
 Set up the script to return data in an easy to parse (for js) notation (like JSON) and assign the result to arrOfStrings in the success handler.
+
+we could use visual studio live share
+
+1. Make the game in java
+2. implement to website
+3. pardy hard
