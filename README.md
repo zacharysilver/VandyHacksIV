@@ -7,6 +7,9 @@ This will intially be a program running on a computer before we move it over to 
 
 Ok so 14 hours in, we've pivoted. We are now making a texted based random event "game" that chronicles the life of a fish. The app will have a theme of conservation, and throughout the game we'll be hitting the player with insane fish facts and info on conservation. 
 
+Here is a link for a Google Doc with code and more information: https://docs.google.com/document/d/1yoE4dRxoPT3SNynykN69WeN9sC5H90QV6f0RCZgU_yw/edit?usp=sharing
+
+
 ## Characteristics of the game: 
 - The turns will be short, and so the player will have to think quickly. 
 - In the end, your high score will be uploaded to a file (leaderboard). 
