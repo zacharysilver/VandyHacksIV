@@ -9,10 +9,23 @@ public class LifeOfAFish {
         System.out.print("Welcome to Life of a Fish\nPlease enter your name:");
         String nameUser = console.nextLine().trim();
 
-        System.out.println("Welcome "+ nameUser + " the salmon!\nSwim upstream('U') or downstream('D'):");
+        System.out.print("Welcome "+ nameUser + " the salmon!\nYou're a Sockeye born in Washington. You'll start with 5 hearts. \nYou've survived the treacherous first year, and journeyed upstream to the ocean. \nSwim East('E'), North('N'), South('S'), or stay on the West Coast('W'):");
+        int hearts=5;
         int choice = inputChoice(console);
+        System.out.println(choice);
+        if(choice==3){
+            hearts-=1;
+            System.out.println("Along the coast, you're harmed by toxic chemicals released by humans. Lose 1 heart.");
+        }
+        if(choice==2){
+            hearts-=2;
+            System.out.println("Rising ocean temperatures due to climate change have made the southern Pacific nearly uninhabitable for you. Lose 2 hearts.");
+        }
+        if(choice<=1){
+            System.out.println("Good choice! In today's warmer climate, you'll fare best in the cold northern Pacific.");
+        }
 
-
+        
 
 
 
@@ -24,29 +37,20 @@ public class LifeOfAFish {
         boolean keepGoing = true;
         int choice = 0;
 
-        while (keepGoing) {
+        while (true) {
             String inputLine = console.nextLine();
 
             if (inputLine.length() != 0) {
+                String directions = "ENSW";
                 char direction = inputLine.charAt(0);
-
-                if (direction == 'U' )  {
-
-                    choice = 1;
-                    keepGoing = false;
-
-                } else if (direction == 'D') {
-                    choice = 2;
-                    keepGoing = false;
-
-                } else {
-                    System.out.print("Direction must be 'U' or 'D', try again: ");
-                }
-            } else {
+                int num=directions.indexOf(direction);
+                if(num!=-1){
+                    return num;
+                }else {
                 System.out.print("Direction must be 'U' or 'D', try again: ");
             }
         }
-        return choice;
+    }
     }
 
 }
