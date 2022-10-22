@@ -7,3 +7,9 @@ Ideas for what language to use.
 
 First Implementation
 - using speech recognition api on with python for real time signal processing. It listens for speech, and the returns a message. Should be as easy as voice threshold. 
+
+Python with Apps
+- Apps like Javascript and frontend languages. Python is backend, and...
+Javascript runs on the client. I assume the python runs on the server. You could send an ajax request to the server. It won't be fast.
+Using ajax, send text to a python script on your server. 
+Set up the script to return data in an easy to parse (for js) notation (like JSON) and assign the result to arrOfStrings in the success handler.
